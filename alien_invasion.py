@@ -14,10 +14,10 @@ class AlienInvasion:
         # Initialize Pygame and create resources
         pygame.init()
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
-
+        # Create a ship and bullets sprite group
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
-
+        # Set game window caption
         pygame.display.set_caption("Alien Invasion")
 
     def check_events(self):
