@@ -21,5 +21,5 @@ class Ship:
         if self.moving_left and self.rect.left > 0:
             self.rect.x -= 1
 
-    def draw(self):
+    def draw_ship(self):
         self.screen.blit(self.image, self.rect)
