@@ -8,7 +8,7 @@ class Ship:
         # load the ship image
         self.image_path = 'C:/Users/Aaron/OneDrive/Programming/Python/Crash Course/alien_invasion/images/ship.bmp'
         self.image = pygame.image.load(self.image_path)
-        self.rect = self.image.get_rect()                                      
+        self.rect = self.image.get_rect()         
         # start each new ship at the bottom center of the screen
         self.rect.midbottom = self.screen_rect.midbottom
         # State of the ship's movement
@@ -23,3 +23,7 @@ class Ship:
 
     def draw_ship(self):
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.rect.x = float(self.rect.x)
