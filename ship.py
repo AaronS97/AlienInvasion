@@ -9,7 +9,7 @@ class Ship(Sprite):
         self.screen = game.screen
         self.screen_rect = game.screen.get_rect()
         # load the ship image
-        self.image_path = 'C:/Users/Aaron/OneDrive/Documents/GitHub/AlienInvasion/images/ship.bmp' 
+        self.image_path = 'ENTER PATH TO SHIP IMAGE HERE' 
         self.image = pygame.image.load(self.image_path)
         self.rect = self.image.get_rect()         
         # start each new ship at the bottom center of the screen
