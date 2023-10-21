@@ -9,7 +9,7 @@ class Alien(Sprite):
         self.screen = game.screen
         self.settings = game.settings
         # Initialize the alien's image, color and position
-        self.image_path = 'C:/Users/aaron/OneDrive/Documents/GitHub/AlienInvasion/images/alien.bmp'
+        self.image_path = 'ENTER PATH TO ALIEN IMAGE HERE'
         self.image = pygame.image.load(self.image_path)
         self.rect = self.image.get_rect()
         self.rect.x = self.rect.width
