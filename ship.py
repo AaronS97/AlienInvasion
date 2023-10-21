@@ -1,12 +1,15 @@
 import pygame
+from pygame.sprite import Sprite
 
-class Ship:
+class Ship(Sprite):
     def __init__(self, game):
+        # Initialize the class with global game settings and inherit from Sprite
+        super().__init__()
         # initialize the class, get screen and rect
         self.screen = game.screen
         self.screen_rect = game.screen.get_rect()
         # load the ship image
-        self.image_path = 'C:/Users/Aaron/OneDrive/Programming/Python/Crash Course/alien_invasion/images/ship.bmp'
+        self.image_path = 'C:/Users/Aaron/OneDrive/Documents/GitHub/AlienInvasion/images/ship.bmp' 
         self.image = pygame.image.load(self.image_path)
         self.rect = self.image.get_rect()         
         # start each new ship at the bottom center of the screen
